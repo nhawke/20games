@@ -7,6 +7,7 @@ pub fn build(b: *std.Build) !void {
 
     const games = [_][:0]const u8{
         "pong",
+        "breakout",
     };
     for (games) |game| {
         try buildGame(b, game, target, optimize);
